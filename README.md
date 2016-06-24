@@ -7,6 +7,7 @@ This application is intended to run on heroku
 #### Environment Variables
 `DATABASE_URL` the url to the database
 `PORT` the port you want to run the sever on. defaults to 3000
+`INSTAGRAM_TOKEN` instgram API token
 
 ##Data Schema
 

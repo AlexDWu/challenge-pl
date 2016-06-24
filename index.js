@@ -6,7 +6,7 @@ const handlers = require('./handlers.js');
 const app = express();
 const models = require('./models');
 
-models.sequelize.sync({force:true}).then(() => {
+models.sequelize.sync({force:process.env.RECREATE_DB}).then(() => {
   app.use(bodyParser.json());
 
   app.get('/', function (req, res) {
